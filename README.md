@@ -20,10 +20,14 @@ install `venv` if it is not already installed. To activate the virtual environme
 `source .muenv/bin/activate`. Once inside the virtual environment `(.muenv)`, install Mu
 by running `pip3 install mu-editor`.
 
-Linux users must add their user to the `dialout` group to access the serial console output. From
-the command line, run `nano /etc/group`. Find the line with `dialout:` and add your user to the
-end of the line, after a comma with no space, i.e. `dialout:foo,your_user`. Then, log out of the
-user and log back in for the change to take affect.
+Linux users must add their user to the `dialout` group to access the serial console output. 
+From the command line, run `sudo adduser $USER dialout` to add your user to the `dialout`
+group. Then, log out of the user and log back in for the change to take affect.
+
+If the serial console is not working, first verify that your user was successfully added to 
+`dialout`. From the command line run `nano /etc/group`. Find the line beginning with 
+`dialout:` and verify your user is at end of the line, after a comma with no space, 
+i.e. `dialout:foo,your_user`.
 
 ## Running Mu editor
 To run Mu on Windows, double-click the icon.
