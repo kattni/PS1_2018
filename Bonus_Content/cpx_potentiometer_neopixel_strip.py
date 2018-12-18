@@ -1,5 +1,5 @@
-# Connect the potentiometer to A0 and the NeoPixel strip to A1.
-# Rotate the potentiometer knob to watch the servo rotate!
+# Connect the potentiometer to A0 and the NeoPixel strip to A7.
+# Rotate the potentiometer knob and watch the number of pixels lit up change!
 import time
 import board
 import simpleio
